@@ -44,6 +44,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/lbxproxy
 %{_libdir}/X11/lbxproxy/AtomControl
-%{_mandir}/man1/lbxproxy.1x.bz2
+%{_mandir}/man1/lbxproxy.1*
 
 
