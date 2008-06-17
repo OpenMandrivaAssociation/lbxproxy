@@ -1,6 +1,6 @@
 Name: lbxproxy
 Version: 1.0.1
-Release: %mkrel 5
+Release: %mkrel 6
 Summary: Low Bandwidth X proxy
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
