@@ -1,6 +1,6 @@
 Name: lbxproxy
-Version: 1.0.1
-Release: %mkrel 8
+Version: 1.0.2
+Release: %mkrel 1
 Summary: Low Bandwidth X proxy
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -23,6 +23,8 @@ lbxproxy as if were a regular server. The lbxproxy accepts client connections,
 multiplexes them over a single connection to the X server, and performs various
 optimizations on the X protocol to make it faster over low bandwidth and/or
 high latency connections.
+Note that current X servers don't support the LBX extension, so this package is
+only useful to connect to old X servers.
 
 %prep
 %setup -q -n %{name}-%{version}
