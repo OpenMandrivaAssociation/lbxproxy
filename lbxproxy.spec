@@ -5,7 +5,6 @@ Release:	2
 License:	MIT
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
-Patch0:		aarch64.patch
 
 BuildRequires:	pkgconfig(ice) >= 1.0.0
 BuildRequires:	pkgconfig(lbxutil) >= 1.0.0
