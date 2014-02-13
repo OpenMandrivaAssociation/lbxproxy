@@ -42,6 +42,6 @@ only useful to connect to old X servers.
 
 %files
 %{_bindir}/lbxproxy
-%{_libdir}/X11/lbxproxy/AtomControl
+%{_sysconfdir}/X11/lbxproxy/AtomControl
 %{_mandir}/man1/lbxproxy.1*
 
