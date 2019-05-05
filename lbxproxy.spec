@@ -1,7 +1,7 @@
 Summary:	Low Bandwidth X proxy
 Name:		lbxproxy
 Version:	1.0.3
-Release:	13
+Release:	14
 License:	MIT
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -26,18 +26,21 @@ Note that current X servers don't support the LBX extension, so this package is
 only useful to connect to old X servers.
 
 %prep
-%setup -q
-%apply_patches
+%autosetup -p1
 
 %build
-%configure2_5x \
+# make autoreconf more happy
+sed -i -e 's,\(^AM_INIT_AUTOMAKE(\[\),\1subdir-objects ,' configure.ac
+autoreconf -vfi
+
+%configure \
 	--x-includes=%{_includedir}\
 	--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/lbxproxy
