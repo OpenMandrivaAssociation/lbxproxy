@@ -14,6 +14,11 @@ BuildRequires:	pkgconfig(xorg-macros)
 BuildRequires:	pkgconfig(xproto)
 BuildRequires:	pkgconfig(xtrans)
 
+=====
+THIS PACKAGE DEPRECATED
+https://bugzilla.redhat.com/show_bug.cgi?id=190909
+====
+
 %description
 Applications that would like to take advantage of the Low Bandwidth
 extension to X (LBX) must make their connections to an lbxproxy. These
